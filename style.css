@@ -1,0 +1,12 @@
+.typewrite > .wrap { border-right: 0.08em solid #fff}
+@import 
+  url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+body {
+  background-color:black;
+  text-align: center;
+  color:#fff;
+  padding-top:10em; 
+  font-family: 'Anonymous Pro', monospace;
+}
+* { color:#fff; text-decoration: none;}

@@ -1,90 +1,23 @@
 <!DOCTYPE html>
 <html>
-<body>
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>soon..</title>
-<a href="" class="typewrite" data-period="2000" data-type="[ &quot;soon.&quot;, &quot;soon..&quot;, &quot;soon...&quot;  ]"><span class="wrap">MrKubuS#3040</span></a>
-<style type="text/css">.typewrite > .wrap { border-right: 0.08em solid #fff}</style>
-<style>
-@import 
-  url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-
-body {
-  background-color:black;
-  text-align: center;
-  color:#fff;
-  padding-top:10em; 
-  font-family: 'Anonymous Pro', monospace;
-}
-
-* { color:#fff; text-decoration: none;}
-
-</style>
+<a href="" class="typewrite" data-period="2000" data-type="[ &quot;soon.&quot;, &quot;soon..&quot;, &quot;soon...&quot;  ]"><span class="wrap">pjotrek.xyz</span></a>
+<link rel="stylesheet" href="style.css">
   <meta content="pjotrek.xyz" property="og:title" />
     <meta content="soon.." property="og:description" />
     <meta content="https://pjotrek.xyz" property="og:url" />
     <meta content="https://play-lh.googleusercontent.com/YUBDky2apqeojcw6eexQEpitWuRPOK7kPe_UbqQNv-A4Pi_fXm-YQ8vTCwPKtxIPgius" property="og:image" />
     <meta content="#6900ba" data-react-helmet="true" name="theme-color" />
-<script>
-    
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-    
-</script>
+<script src="main.js"></script>
+    </head>
+    <body>
+        <br><br><br>
   <form action="https://www.paypal.com/paypalme/pj0trek">
-    <input type="submit" value="Donate"/ >
+    <button type="button" class="btn btn-outline-primary">Donate through PayPal</button>
+
+
 </body>
 </html>
