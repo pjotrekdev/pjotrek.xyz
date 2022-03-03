@@ -1,4 +1,4 @@
-.typewrite > .wrap { border-right: 0.08em solid #fff}
+.typewrite > .wrap { border-right: 0.08em solid #fff; text-shadow: 0 0 10px #fff}
 @import 
   url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
