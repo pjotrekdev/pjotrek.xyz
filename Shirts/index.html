@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  /* padding: 0 6px; */
+  /* float: left; */
+  width: 24.99999%;
+  margin: auto;
+  /* width: 50%; */
+  padding: 10px;
+
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+    background-color: black;
+}
+
+div.desc {
+    color:cornflowerblue;
+    text-decoration: underline;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="black.png">
+      <img src="black.png" alt="blck" width="512" height="512">
+    </a>
+    <div onclick="location.href='https://www.roblox.com/catalog/11263249505/98-Black';" style="cursor:pointer;" class="desc">Link to this shirt</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="white.png">
+        <img src="white.png" alt="white" width="512" height="512">
+      </a>
+      <div onclick="location.href='https://www.roblox.com/catalog/11263076853/98-White';" style="cursor:pointer;" class="desc">Link to this shirt</div> </a>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
